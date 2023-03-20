@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="layout/styles/fontawesome-free/css/fontawesome-all.min.css">
+
+<!--js script here-->
+<script>
+    function servDoc() {
+  var serv = new XMLHttpRequest();
+  serv.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById('meg').innerHTML = this.responseText;
+    }
+  };
+  serv.open("GET", "services.html", true);
+  serv.send();
+}
+</script>
+<!--js_ends here-->
+
+</head>
+<body>
+<!--Header/Navigation menu-->
+<div class="container-fluid" style="background: #ffffffff;">
+	<div class="row">
+<!--css will come here which will add more functionality to the nav bar	we will use organie css ...
+-->
+
+<style>
+.nav-link {
+	color: #5c8a8a !important;
+	font-weight: bold;
+	font-size: 10.9px;
+	font-stretch: condensed;
+	letter-spacing: 0.6px;
+}
+
+.navbar-nav {
+	text-align: right;
+	margin-right: 16px;
+}
+.menu-bar .navbar-toggler {
+	color: rgb(47, 28, 28);
+	padding-right: 24px;
+	outline: none!important;
+	border: none!important;
+}
+.menu-bar {
+	margin-top: 1.2%;
+	margin-bottom: 1.2%;
+}
+.navbar .fa {
+	color: #fff!important;
+	font-size: 26px;
+}
+
+.nav-link:hover {
+	background: white;
+	border-bottom: 2px solid rgb(232, 35, 35);
+}
+.navbar-brand img {
+	width: 150px;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+li {
+	padding-right: 8px;
+}
+#free_btn :hover {
+	color: gray;
+}
+</style>
+		<header><!---This line is optional just for the header--->
+			<div class="menu-bar">
+				<nav class="navbar navbar-expand-lg navbar-dark">  
+					<a class="navbar-brand" href="#" style="color: black;"><strong>ALVALON</strong></a>
+
+						<!--you will need a button here so that you cn toggle it on/off when the screen size shrinks-->
+						<button class="navbar-toggler btn-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"><i class="fas fa-th-list" style="color: #5c8a8a;"></i></button>
+
+					<div class="collapse navbar-collapse" id="navbarNav">
+
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#home" onclick="servDoc()">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">How it works</a>
+							</li>
+				 
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Testimonies</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Pricing</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">About Us</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Free Stuff</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#contact"><i class="fas fa-tty"></i> (234) 806-2951</a>
+							</li>
+
+						</ul>
+
+					</div>
+					<section>
+						<input type="button" style="background: skyblue; cursor: pointer; border: none; font-weight: bold; padding: 5px 24px; margin: 4px 2px; color: white; float: left;" value="Free Conslutation"></button>
+					 </section>
+				</nav>
+			</div>
+		</header>
+	</div>
+</div>
+
+<!###################################################################################################>
+<!###################################################################################################>
+<!--Main Contetnt1-->
+<div class="container-fluid" style="background-image: url(img/albari.jpg); background-size: cover; background-repeat: no-repeat;">
+	<div class="row" id="meg" style="color: whitesmoke;">
+		<div class="col-md-6" style="">
+
+			<!--media_Query styling here-->
+			<style>
+				@media screen and (max-width: 680px)
+				{
+					.desci {
+						width: 20.3em;
+					}
+					h4 {
+						margin-left: -9.5em;
+					}
+					p {
+						margin-left: -18.4em;
+					}
+				}
+			</style>
+			<!--Media_Query styling ends here-->
+			<div class="desci" style="color: whitesmoke; margin: auto;">
+				<div class="merg" id="desc" style="margin-left: 20em; ">
+					<h4 style="margin-top: 3em; margin-bottom: 0.9em;">
+						<strong>
+							Your Online Accounting<br /> <span>Department</span>
+						</strong>
+					</h4>
+					<p>
+						We provide online Bookkeeping, Accounting Services, and expert financial advice for small businesses - giving you more time to grow !
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6" style="">
+			<!--form_here-->
+			<div class="gt_intouch" style="margin-top: 2em; margin-left: ; font-weight: bold; opacity: 0.9; margin-bottom: 2em; width: 20em; background-color: #000000; color: whitesmoke;" align="center">
+				<h6 style="margin-top: 2em; margin-bottom: 2em;">
+					<strong>Get In touch and one of <br /> our team of experts will contact you for your free<br /> consultation</strong>
+				</h6>
+				<form action="" method="post">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group" style="margin-bottom:0.3em; margin-left: 1em;" align="left">
+								<label class="label" for="first_name" style="margin-right: 2em;">First Name <span style="color: red;">*</span></label>
+								<input type="text" class="form-group" name="firstname"  style="width: 8em; margin-right: 2px;">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group" style="margin-bottom:0.3em; margin-right: 1em;">
+								<label class="label" for="last_name" style="margin-right: 2.4em;">Last Name <span style="color: red;">*</span></label>
+								<input type="last_name" class="form-group" name="lastname" style="width: 8em; margin-left: 2px;"><br />
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group" style="margin-bottom:0.3em; margin-left: 1em;">
+								<label class="label" for="Email" style="margin-right: 4.7em;">Email <span style="color: red;">*</span></label>
+								<input type="email" class="form-group" name="email" style="width: 17em; margin-left: 2px;">
+							</div>
+						</div><br />
+						<div class="col-md-6">
+							<div class="form-group" style="margin-bottom:0.3em; margin-left: 1em;">
+								<label class="label" for="Phone" style="margin-right: 0.3em;">Phone Number <span style="color: red;">*</span></label>
+								<input type="number" class="form-group" name="phone" style="width: 17em; margin-left: 2px;">
+							</div>
+						</div>
+						<div class="free_con" style="margin-bottom: 2em; margin-top: 1em; margin-left: 1em;">
+							<input type="button" style="background: skyblue; cursor: pointer; border: none; font-weight: bold; padding: 6px 28px; margin: 4px 2px; color: white; float: left;" value="Free Conslutation"></button>
+						</div>
+					</div>					
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Java script Form validation start here --->
+
+<script type="text/javascript">
+	function val() { // Declaring variables
+		var firstname = document.getElementByName('firstname');
+		var lastname = document.getElementByName('lastname');
+		var email = document.getElementByName('email');
+		var phone = document.getElementByName('phone');
+
+		//Checking variables
+		if (is Alphabets(firstname, "please use only letters")) {
+			if (is Alphabets(lastname, "please use only letters")) {
+				if (email validator "email, please use a valid email") {
+					if (is numeric "number, please use a phone number") {
+						return true;
+					}
+				}
+
+			}
+		}
+		return false;
+			}
+			function notempty(detail, respMesg, asterisk) {
+				if (detail.value.length == 0) {
+					alert(respMesg);
+					detail.focus("asterisk");
+					return false;
+				}
+				return true;
+			}
+
+			if isAlphabets (detail, respMesg) {
+				var alphaExp = /^[a-zA-Z]+$/;
+				if (detail.value.match(alphaExp)) {
+					return true;
+				}else {
+					alert(respMesg)
+					detail.focus();
+					return false;
+				}
+			}
+			function emailVal(detail, respMesg) {
+				var emailEx = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+ 
+				
+			}
+	
+</script>
+<!-- Java scripts Form validation ends here --->
+
+
+
+<!--Main Contetnt2-->
+<div class="container-fluid">
+	<div class="row" style="background-color: #99ccff;">
+		<div class="col-md-12" align="center">
+			<div class="ent_guide">
+				<h6 style="margin-top: 3%; margin-bottom: 1.5%;">
+				<span style="color: whitesmoke; font-weight: bold;">Entrepreneur's Guide -</span> <span style="color: whitesmoke;">six questions about your bsiness that your accountant should answer.</span>
+				</h6>
+				<form action="" method="post" style="margin-bottom: 3%;">
+					<input type="text" name="email" placeholder="email address" style="padding: 8px 32px; border: none;">
+					<input type="button"  style="background-color: #206040; font-weight: bold; padding: 8px 32px; color: whitesmoke; cursor: pointer; border: none; margin: 4px 2px;" value="GET ME FREE COURSES">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Main Contetnt3-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="...">
+			
+		</div>
+	</div>
+</div>
+
+
+<!###################################################################################################><!###################################################################################################>
+<!--Footer-->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" align="center">
+			<div class="trusted">
+				<h5 style="margin-top: 2.7%;">We are trusted by</h5>
+				<img src="img/IITrusted.jpg" style="height: 200px; width: 325px;"><img src="img/Trusted.jpg" style="height: 200px; width: 348px;">
+			</div>			
+		</div>
+	</div>
+</div>
+
+<script src="jQuery/jquery.min.js"></script>
+<script src="jQuery/jquery-3.5.1.min.js"></script>
+<script src="jQuery/jquery-3.0.0.min.js"></script>
+<script src="jQuery/bootstrap.bundle.min.js"></script>
+<script src="jQuery/popper.min.js"></script>
+<script src="jQuery/bootstrap.js"></script>
+<script src="jQuery/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+

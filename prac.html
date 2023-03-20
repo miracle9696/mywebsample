@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="layout/styles/fontawesome-free/css/fontawesome-all.min.css">
+
+	<title></title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-7">
+				<div>
+					<form action="service.html" method="GET" onsubmit="notify()">
+						Name: <input type="text" name="username" id="meg"><br>
+						<button type="btn" class="btn-light">register</button>	
+						</form>
+					<script>
+						function notify() {
+							var val = document.getElementById('meg').value;
+							 if (val.length == "") {
+								alert("Please fill out this field");
+							} 
+								window.location = "service.html";
+							
+						}
+					</script>
+				</div>
+				<div>					
+				</div>
+			</div>
+		</div>
+	</div> 
+
+</body>
+</html>
